@@ -178,7 +178,7 @@ public class CardStackView extends FrameLayout {
             CardContainerView container = getBottomView();
             container.setDraggable(false);
             ViewGroup parent = container.getContentContainer();
-            View child = adapter.getView(lastIndex, parent.getChildAt(0), parent);
+            View child = adapter.getView(lastIndex, null, parent);
             if (parent.getChildCount() != 0) {
                 parent.removeViewAt(0);
             }
